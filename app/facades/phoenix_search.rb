@@ -1,5 +1,4 @@
 class PhoenixSearch
-  attr_reader :house
 
   def initialize(house)
     @house = house
@@ -28,4 +27,8 @@ class PhoenixSearch
     #   Member.new(member_data)
     # end
   end
+
+  private
+
+  attr_reader :house
 end

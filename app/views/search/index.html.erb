@@ -2,17 +2,17 @@
 
 <% search_results.members.each do |member| %>
   <ul class="member">
-    <li class="name"><%= member.name %></li>
+    <li class="name">Name: <%= member.name %></li>
     <% if member.role %>
-      <li class="role"><%= member.role %></li>
+      <li class="role">Role: <%= member.role %></li>
     <% else %>
-      <li class="role">No role for this member</li>
+      <li class="role">Role: No role for this member</li>
     <% end %>
-    <li class="house"><%= member.house %></li>
+    <li class="house">House: <%= member.house %></li>
     <% if member.patronus %>
-    <li class="patronus"><%= member.patronus %></li>
+    <li class="patronus">Patronus: <%= member.patronus %></li>
     <% else %>
-      <li class="patronus">No patronus for this member</li>
+      <li class="patronus">Patronus: No patronus for this member</li>
     <% end %>
   </ul>
 <% end %>

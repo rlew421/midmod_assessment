@@ -24,7 +24,7 @@ feature "user can search for Gryffindor members of the Order of the Phoenix" do
     click_on "Search For Members"
 
     expect(current_path).to eq(search_path)
-    expect(page).to have_content("21")
+    expect(page).to have_content("21 Results")
     expect(page).to have_css(".member", count: 21)
 
     within(first(".member")) do

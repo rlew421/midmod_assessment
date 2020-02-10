@@ -10,7 +10,7 @@ class PhoenixSearch
 
   def members
     service = HarrypotterService.new
-    service.members_by_house(house).map do |member_data|
+    @members ||= service.members_by_house(house).map do |member_data|
       Member.new(member_data)
     end
 
